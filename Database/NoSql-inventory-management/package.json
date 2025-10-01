@@ -1,0 +1,19 @@
+{
+  "name": "nosql-inventory-management",
+  "version": "1.0.0",
+  "description": "An inventory management system using NoSQL database.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "body-parser": "^2.2.0",
+    "dotenv": "^17.2.1",
+    "mongoose": "^8.18.0",
+    "nodemon": "^3.1.10"
+  },
+  "author": "",
+  "license": "ISC"
+}

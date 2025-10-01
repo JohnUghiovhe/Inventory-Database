@@ -1,0 +1,22 @@
+{
+  "name": "inventory-management-system",
+  "version": "1.0.0",
+  "description": "An inventory management system for managing items and orders.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "author": "John Ughiovhe",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mysql2": "^3.14.3",
+    "sequelize": "^6.37.1",
+    "dotenv": "^17.2.1",
+    "body-parser": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
