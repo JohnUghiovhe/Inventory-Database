@@ -4,10 +4,11 @@ const ProductsController = require('../controllers/productsController');
 const router = express.Router();
 const productsController = new ProductsController();
 
-router.post('/products', productsController.createProduct);
-router.get('/products', productsController.getProducts);
-router.put('/products/:id', productsController.updateProduct);
-router.delete('/products/:id', productsController.deleteProduct);
-router.post('/products/order', productsController.placeOrder);
+// routes are relative to the mount point (app.use('/products', productRoute))
+router.post('/', productsController.createProduct);
+router.get('/', productsController.getProducts);
+router.put('/:id', productsController.updateProduct);
+router.delete('/:id', productsController.deleteProduct);
+router.post('/order', productsController.placeOrder);
 
 module.exports = router;
